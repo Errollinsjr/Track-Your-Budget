@@ -49,3 +49,39 @@ self.addEventListener("activate", function(event) {
     );
     self.clients.claim();
 });
+
+//adding our fetch call to the service worker
+self.addEventListener("fetch", function(event) {
+    //looks for a successful response
+    if (event.request.url.includes("/api/")) {
+        event.respondWith(
+            caches.open(DATA_CACHE_NAME).then(cache => {
+                return fetch(event.request)
+                    .then(response => {
+                        //if the fetch call gives us a good response we will store the response or cache the response
+                        if(response.status === 200) {
+                            cache.put(event.request.url, response.clone());
+                        }
+
+                        return response;
+                    })
+                    .catch(error => {
+                        //so if there is an error we will try to look to the cache to get our matching response
+                        return cache.match(event.request);
+                    });
+            })
+            .catch(error => console.log(error))
+        );
+        return;
+    }
+    //use off-line if no api response
+    event.respondWith(
+        caches.open(CACHE_NAME)
+        .then(cache => {
+            return cache.match(event.request)
+            .then(response => {
+                return response || fetch(event.request);
+            });
+        })
+    );
+});
