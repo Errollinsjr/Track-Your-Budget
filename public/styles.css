@@ -1,4 +1,8 @@
 body {
+  background-image: url("/backgroundTwo.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 750px;
   font-size: 120%;
   font-family: Arial;
 }
@@ -29,10 +33,6 @@ tr:nth-child(even) {
 }
 
 .wrapper {
-  background-image: url("/backgroundOne.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 0 auto;
   max-width: 825px;
   text-align: center;
