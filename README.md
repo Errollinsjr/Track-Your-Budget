@@ -6,7 +6,7 @@ Welcome
 
 Track Your Budget app is a simple application that allows you to enter transactions the moment you make one. It will keep track of whether you've added money to your overall budget or subtracted
 
-Link to live application: [TrackYourBudget](https://Track-Your-Budget.herokuapp.com/)
+Link to live application: [TrackYourBudget](https://track-your-budget-simple.herokuapp.com/)
 
 ## User Story
 
@@ -18,9 +18,9 @@ SO THAT I can keep track of my spending
 
 ## Mock-Up
 
-The following shows the websites functionality:
+The following shows the functionality:
 
-![TrackYourBudget](DemoBudget.mp4)
+https://user-images.githubusercontent.com/43302610/132001662-d15100f0-6e33-4877-89b2-06747e3e0237.mp4
 
 ## Technologies Used
 
