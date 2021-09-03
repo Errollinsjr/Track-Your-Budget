@@ -2,7 +2,7 @@ let db,
 budgetVer;
 
 //makes a new database req for Budget database
-const request = indexedDB.open("BudgetDB", budgetVer || 6);
+const request = indexedDB.open("BudgetDB", budgetVer || 21);
 
 function checkDatabase() {
     console.log("Check db function running");
