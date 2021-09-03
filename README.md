@@ -1,7 +1,3 @@
-
-
-https://user-images.githubusercontent.com/43302610/132001662-d15100f0-6e33-4877-89b2-06747e3e0237.mp4
-
 # Track-Your-Budget
 
 Welcome
@@ -22,7 +18,7 @@ SO THAT I can keep track of my spending
 
 ## Mock-Up
 
-The following shows the websites functionality:
+The following shows the functionality:
 
 https://user-images.githubusercontent.com/43302610/132001662-d15100f0-6e33-4877-89b2-06747e3e0237.mp4
 
