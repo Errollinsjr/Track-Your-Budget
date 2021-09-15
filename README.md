@@ -8,6 +8,8 @@ Track Your Budget app is a simple application that allows you to enter transacti
 
 Link to live application: [TrackYourBudget](https://enigmatic-woodland-88795.herokuapp.com/)
 
+![BudgetTracker](https://user-images.githubusercontent.com/43302610/133486069-97ed815b-0410-4926-aa38-9a36d8e69a2e.png)
+
 ## User Story
 
 ```
